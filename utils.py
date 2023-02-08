@@ -394,8 +394,8 @@ async def get_shortlink(link):
                     return data['shortenedUrl']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'https://{tnlink.in}/api?api={7c91397a830dbcec59b2bf19c1b972a47b61a3ff}&link={link}'
+                    return f'https://{URL_SHORTENR_WEBSITE}/api?api={7c91397a830dbcec59b2bf19c1b972a47b61a3ff}&link={link}'
 
     except Exception as e:
         logger.error(e)
-        return f'{tnlink.in}/api?api={7c91397a830dbcec59b2bf19c1b972a47b61a3ff}&link={link}'
+        return f'{URL_SHORTENR_WEBSITE}/api?api={7c91397a830dbcec59b2bff'{URL_SHORTENR_WEBSITE}/api?api={7c91397a830dbcec59b2bf19c1b972a47b61a3ff}&link={link19c1b972a47b61a3ff}&link={link}'
