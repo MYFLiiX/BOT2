@@ -20,20 +20,20 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/30ef18b360b85a33f712b.jpg https://te.legra.ph/file/e17896174c04e67417b4a.jpg https://te.legra.ph/file/ae7342b2b4b4c0d0b448a.jpg https://te.legra.ph/file/2405007ed86482c637118.jpg')).split()
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1843754190').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001859338601').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001521700370')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001868940231')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://missmaya:ayushman_card@cluster0.k7ie11a.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Irfan:786or786@cluster0.2jjhd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "MYFLiiX")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'heroflix_files')
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001885982111'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001311999825')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001859057505'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MYFLiiX_2')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
