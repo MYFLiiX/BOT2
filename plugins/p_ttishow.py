@@ -21,7 +21,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('🎗Support🎗', url=f'https://telegram.me/HEROFLiX/1328')
+                InlineKeyboardButton('🎗Support🎗', url=f'https://telegram.me/MYFLiiX')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -36,8 +36,8 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('📲 Support 📲', url=f"https://telegram.me/HEROFLiX/1328"),
-            InlineKeyboardButton('🔆 Updates 🔆', url='https://telegram.me/HeroFlix')
+            InlineKeyboardButton('📲 Support 📲', url=f"https://telegram.me/MYFLiiX"),
+            InlineKeyboardButton('🔆 Updates 🔆', url='https://telegram.me/MYFLiiX')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -47,8 +47,8 @@ async def save_group(bot, message):
         for u in message.new_chat_members:
             await message.reply_photo(
             photo="https://graph.org/file/75d4fcc66598ea1ef4941.jpg",                                               
-                                                 caption=f'<b><i>🔆 "HEROFLiX • GROUP" 亗 🔆\n•───────────────────• \n⚜Hey {u.mention}, Welcome To HeroFlix • Group. You Can Request Any Movies, Web-Series, Anime, K-Dramas, Animation, etc., here....</i></b>',
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❗How To Request & Download❗', url='https://telegram.me/HEROFLiX/1201') ] ] )
+                                                 caption=f'<b><i>🔆 "Myfliix • GROUP" 亗 🔆\n•───────────────────• \n⚜Hey {u.mention}, Welcome To Myfliix • Group. You Can Request Any Movies, Web-Series, Anime, K-Dramas, Animation, etc., here....</i></b>',
+                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❗How To Request & Download❗', url='https://telegram.me/MYFLiiX') ] ] )
                 )
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -62,7 +62,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🎗️Support🎗️', url=f'https://telegram.me/HEROFLiX/1328')
+            InlineKeyboardButton('🎗️Support🎗️', url=f'https://telegram.me/MYFLiiX')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -101,7 +101,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('🎗️Support🎗️', url=f'https://telegram.me/HEROFLiX/1328')
+            InlineKeyboardButton('🎗️Support🎗️', url=f'https://telegram.me/MYFLiiX')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
