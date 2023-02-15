@@ -13,13 +13,13 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '24690581'))
 API_HASH = environ.get('API_HASH', '9f8082811c4e168f298e4574da790383')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5945048757:AAFzjFj4sThda354_J9FVmZ3ShQFnYmd_yg')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5845533149:AAHcVKhocnU0NZCJvuENdVw9uvGQ6JbCHaE')
 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/a9119eb69d4d79466fa6a.jpg https://te.legra.ph/file/681441f56f8ec409a3083.jpg https://te.legra.ph/file/7c85b317b93860c7eafba.jpg https://te.legra.ph/file/3bca6b5cf3e89d0dc40a6.jpg')).split()
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1843754190').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5837099475').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
